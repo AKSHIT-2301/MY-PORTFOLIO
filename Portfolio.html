@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,3 +101,107 @@
     <script src="Portfolio.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshit Taneja - Portfolio</title>
+    <!-- Linking my CSS file for styling -->
+    <link href="Portfolio.css" rel="stylesheet">
+    <!-- Google Fonts for a classy look -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with navigation and theme toggle -->
+    <header>
+        <nav>
+            <h1>Akshit Taneja</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </nav>
+    </header>
+
+    <!-- Home section with clock/calendar and image -->
+    <section id="home" class="fade-in">
+        <div class="intro">
+            <img src="My pic.jpg" alt="Akshit Taneja" class="profile-pic">
+            <h1>Hi, I'm Akshit Taneja</h1>
+            <p>A passionate first-year B.Tech student at RGIPT, crafting elegant and user-friendly web experiences.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div id="clock-calendar" class="clock-calendar"></div>
+    </section>
+
+    <!-- About section with profile image -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="My pic.jpg" alt="Akshit Taneja" class="profile-pic">
+            <p>Hey, I’m Akshit Taneja, a first-year B.Tech student in Electronics Engineering at RGIPT, passionate about coding and strategic problem-solving honed through chess. I craft user-friendly websites with HTML and CSS and dive into AI-driven projects using Python, C, and tools like OpenCV, YOLO, and Tesseract for real-time object detection, speech recognition, and more. From building calculators to data visualization with Pandas and Plotly, I’m excited to create innovative solutions that blend creativity and technology!</p>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="fade-in">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src= "Portfolio background.jpg">
+                <h3>My Portfolio Website</h3>
+                <p>A sleek, responsive portfolio built with HTML, CSS, and JavaScript, showcasing my skills and projects with smooth navigation and elegant design.</p>
+            </div>
+            <div class="project-card">
+    <img src="Opening position.png" alt="Chess Opening Explorer">
+    <h3>Chess Opening Explorer</h3>
+    <p>
+        This project showcases <strong>my original chess opening</strong>:<br>
+        <em>Queen’s Gambit: Exchange Fianchettoed Variation – Sarratt Attack</em>.<br><br>
+        Developed through deep study and creativity, this 14-move sequence combines elements from the Queen’s Gambit, London System, and King’s Indian Attack to achieve a solid yet aggressive middlegame setup.
+    </p>
+    <a href="sarratt-attack.pgn" class="btn download-btn" download>📥 Download PGN</a>
+</div>
+
+            <div class="project-card">
+                <img src="Task Tracker.png" alt="Task Tracker">
+                <h3>Task Tracker</h3>
+                <p>A clean, responsive to-do list app built with HTML and CSS, perfect for organizing tasks with a minimalistic interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" onsubmit="saveEntry(event)">
+            <input type="hidden" name="access_key" value="62b39820-1134-4fbe-b484-2d28f31daf6c">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone (Optional)" pattern="[0-9]{10}">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+        <button onclick="viewEntries()" class="btn" style="margin-top: 1rem;">View Messages</button>
+        <div id="entries" style="margin-top: 1rem; display: none;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Akshit Taneja. Built with love and a bit of chess strategy.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="Portfolio.js"></script>
+</body>
+</html>
+>>>>>>> b61260b5420e24df710c702a7289b8bb480a7134
